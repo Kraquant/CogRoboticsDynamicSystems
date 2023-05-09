@@ -41,7 +41,7 @@ def bifurcation_diagram(u0: float, n: int, a_i: float, a_f: float, m: int) -> [f
     return [a_list, un_list]
 
 
-def compute_Series(u0, a, n):
+def compute_series(u0, a, n):
     """
 
     :param u0: Initial value of the series

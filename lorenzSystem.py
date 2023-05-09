@@ -26,7 +26,7 @@ def rk4(tn, yn, h, f):
     return [tn1, yn1]
 
 
-def compute_Lorenz_system(t0, v0, s, r, b, h, n):
+def compute_lorenz_system(t0, v0, s, r, b, h, n):
     t_list = [t0]
     v_list = [v0]
 
@@ -39,26 +39,3 @@ def compute_Lorenz_system(t0, v0, s, r, b, h, n):
         v_list.append(step_i1[1])
 
     return [t_list, v_list]
-
-
-# Initial values
-sigma = 10
-rho = 28
-beta = 2.667
-
-dt = 0.01
-N = 10000
-v0 = np.array([0., 1., 1.05])
-t0 = 0
-
-lorenzSystem = compute_Lorenz_system(t0, v0, sigma, rho, beta, dt, N)
-
-ax = plt.figure(dpi=400).add_subplot(projection='3d')
-
-ax.plot(*np.array(lorenzSystem[1]).T, lw=0.5)
-ax.set_xlabel("X Axis")
-ax.set_ylabel("Y Axis")
-ax.set_zlabel("Z Axis")
-ax.set_title("Lorenz Attractor")
-
-plt.show()
