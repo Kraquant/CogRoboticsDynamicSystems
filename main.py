@@ -26,7 +26,7 @@ lSeries = lf.compute_series(U0, r, N)
 x_list = np.arange(0, 1, 0.01)
 y_list = np.array([lf.f_logistic(x, r) for x in x_list])
 
-plt.plot(x_list, y_list, label='logistic function')
+
 plt.plot([x_list[0], x_list[-1]], [x_list[0], x_list[-1]], color='blue', label='y=x')
 plt.plot(lSeries[1], lSeries[2], linestyle='-', marker='o')
 
