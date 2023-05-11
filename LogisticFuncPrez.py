@@ -31,5 +31,5 @@ for i in range(len(lSeries)):
 fig.tight_layout()
 
 # Display the plots
-plt.savefig('LogisticFunc.pdf', format='pdf')
+plt.savefig('graphs/LogisticFunc.svg', format='svg')
 plt.show()
