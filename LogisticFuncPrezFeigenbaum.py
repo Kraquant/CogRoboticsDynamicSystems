@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #U0 = np.linspace(0.000001, 0.8, 100)
 U0 = [0.1, 0.1001]
 n = 600
-ri = 3.5
+ri = 0
 rf = 4
 
 M = 1000

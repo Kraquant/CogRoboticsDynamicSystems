@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Initial values
 sigma = 10
-rho = 22
+rho = 28
 beta = 2.667
 
 dt = 0.01
